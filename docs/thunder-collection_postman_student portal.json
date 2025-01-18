@@ -1,0 +1,532 @@
+{
+    "info": {
+        "_postman_id": "e8c96bc1-115e-45cc-b889-7bc8cf19e032",
+        "name": "student portal",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "http://localhost:8000/api/application/filterApplications",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8000/api/student/userSignup",
+                    "path": [
+                        "api",
+                        "student",
+                        "userSignup"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"firstName\":\"abhi\",\n  \"lastName\":\"rai\",\n  \"email\":\"Abhijeet.rai@gmail.com\",\n  \"password\":\"admin@112\",\n  \"mobileNumber\":\"6306491252\",\n  \"dateOfBirth\":\"28-06-2002\"\n \n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8000/api/application/filterApplications",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8000/api/student/login",
+                    "path": [
+                        "api",
+                        "student",
+                        "login"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  // \"firstName\":\"abhi\",\n  // \"lastName\":\"rai\",\n  \"email\":\"Abhijeet.rai@gmail.com\",\n  \"password\":\"admin@112\"\n  // \"mobileNumber\":\"1029384756\",\n  // \"dateOfBirth\":\"28-06-2002\"\n \n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8000/api/application/filterApplications",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:8000/api/student/otpVerification",
+                    "path": [
+                        "api",
+                        "student",
+                        "otpVerification"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  // \"firstName\":\"abhi\",\n  // \"lastName\":\"rai\",\n  \"email\":\"Abhijeet.rai@gmail.com\",\n  // \"password\":\"admin@112\"\n  // \"mobileNumber\":\"1029384756\",\n  // \"dateOfBirth\":\"28-06-2002\"\n \"otp\":\"1903\"\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8000/api/application/filterApplications",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:8000/api/student/resendOtp",
+                    "path": [
+                        "api",
+                        "student",
+                        "resendOtp"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  // \"firstName\":\"abhi\",\n  // \"lastName\":\"rai\",\n  \"email\":\"Abhijeet.rai@gmail.com\"\n  // \"password\":\"admin@112\"\n  // \"mobileNumber\":\"1029384756\",\n  // \"dateOfBirth\":\"28-06-2002\"\n// \"otp\":\"1903\"\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8000/api/application/filterApplications",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8000/api/student/login",
+                    "path": [
+                        "api",
+                        "student",
+                        "login"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  // \"firstName\":\"abhi\",\n  // \"lastName\":\"rai\",\n  \"email\":\"Abhijeet.rai@gmail.com\",\n   \"password\":\"admin@112\"\n  // \"mobileNumber\":\"1029384756\",\n  // \"dateOfBirth\":\"28-06-2002\"\n// \"otp\":\"1903\"\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8000/api/application/filterApplications",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:8000/api/student/reSetPassword",
+                    "path": [
+                        "api",
+                        "student",
+                        "reSetPassword"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzhiMTZmZDBkOTJmNDQ3NDE0MGNiOWQiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE3MzcxNjkwNTIsImV4cCI6MTczNzI1NTQ1Mn0.oxfuoti-YMgpl__SlhQKFrS71Ju19a5llyjIo7j-YHg"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  // \"firstName\":\"abhi\",\n  // \"lastName\":\"rai\",\n  // \"email\":\"Abhijeet.rai@gmail.com\",\n  \"oldPassword\":\"admin@112\",\n  // \"mobileNumber\":\"1029384756\",\n  // \"dateOfBirth\":\"28-06-2002\"\n// \"otp\":\"1903\"\n\"newPassword\":\"admin@122\",\n\"confirmNewPassword\":\"admin@122\"\n\n\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8000/api/application/filterApplications",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000/api/student/getProfile",
+                    "path": [
+                        "api",
+                        "student",
+                        "getProfile"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzhiMTZmZDBkOTJmNDQ3NDE0MGNiOWQiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE3MzcxNjkwNTIsImV4cCI6MTczNzI1NTQ1Mn0.oxfuoti-YMgpl__SlhQKFrS71Ju19a5llyjIo7j-YHg"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  // \"firstName\":\"abhi\",\n  // \"lastName\":\"rai\",\n  // \"email\":\"Abhijeet.rai@gmail.com\",\n  // \"oldPassword\":\"admin@112\",\n  // \"mobileNumber\":\"1029384756\",\n  // \"dateOfBirth\":\"28-06-2002\"\n// \"otp\":\"1903\"\n// \"newPassword\":\"admin@122\",\n// \"confirmNewPassword\":\"admin@122\"\n\n\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8000/api/application/filterApplications",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:8000/api/student/userEditProfile",
+                    "path": [
+                        "api",
+                        "student",
+                        "userEditProfile"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzhiMTZmZDBkOTJmNDQ3NDE0MGNiOWQiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE3MzcxNjkwNTIsImV4cCI6MTczNzI1NTQ1Mn0.oxfuoti-YMgpl__SlhQKFrS71Ju19a5llyjIo7j-YHg"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  // \"firstName\":\"abhi\",\n  // \"lastName\":\"rai\",\n  \"email\":\"Abhijeet.rai@gmail.com\",\n  // \"oldPassword\":\"admin@112\",\n  \"mobileNumber\":\"1029384756\"\n  // \"dateOfBirth\":\"28-06-2002\"\n// \"otp\":\"1903\"\n// \"newPassword\":\"admin@122\",\n// \"confirmNewPassword\":\"admin@122\"\n\n\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8000/api/application/filterApplications",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:8000/api/student/userDelete",
+                    "path": [
+                        "api",
+                        "student",
+                        "userDelete"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzhiMTZmZDBkOTJmNDQ3NDE0MGNiOWQiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE3MzcxNjkwNTIsImV4cCI6MTczNzI1NTQ1Mn0.oxfuoti-YMgpl__SlhQKFrS71Ju19a5llyjIo7j-YHg"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  // \"firstName\":\"abhi\",\n  // \"lastName\":\"rai\",\n  // \"email\":\"Abhijeet.rai@gmail.com\",\n  // \"oldPassword\":\"admin@112\",\n  // \"mobileNumber\":\"1029384756\"\n  // \"dateOfBirth\":\"28-06-2002\"\n// \"otp\":\"1903\"\n// \"newPassword\":\"admin@122\",\n// \"confirmNewPassword\":\"admin@122\"\n\n\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8000/api/application/filterApplications",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000/api/student/getAllUser",
+                    "path": [
+                        "api",
+                        "student",
+                        "getAllUser"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzhiMTZmZDBkOTJmNDQ3NDE0MGNiOWQiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE3MzcxNjkwNTIsImV4cCI6MTczNzI1NTQ1Mn0.oxfuoti-YMgpl__SlhQKFrS71Ju19a5llyjIo7j-YHg"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  // \"firstName\":\"abhi\",\n  // \"lastName\":\"rai\",\n  // \"email\":\"Abhijeet.rai@gmail.com\",\n  // \"oldPassword\":\"admin@112\",\n  // \"mobileNumber\":\"1029384756\"\n  // \"dateOfBirth\":\"28-06-2002\"\n// \"otp\":\"1903\"\n// \"newPassword\":\"admin@122\",\n// \"confirmNewPassword\":\"admin@122\"\n\n\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8000/api/application/filterApplications",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:8000/api/student/searchUsers?id=678a7e01605667cde0c233bd",
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "678a7e01605667cde0c233bd"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "api",
+                        "student",
+                        "searchUsers"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzhiMTZmZDBkOTJmNDQ3NDE0MGNiOWQiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE3MzcxNjkwNTIsImV4cCI6MTczNzI1NTQ1Mn0.oxfuoti-YMgpl__SlhQKFrS71Ju19a5llyjIo7j-YHg"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  // \"firstName\":\"abhi\",\n  // \"lastName\":\"rai\",\n  // \"email\":\"Abhijeet.rai@gmail.com\",\n  // \"oldPassword\":\"admin@112\",\n  // \"mobileNumber\":\"1029384756\"\n  // \"dateOfBirth\":\"28-06-2002\"\n// \"otp\":\"1903\"\n// \"newPassword\":\"admin@122\",\n// \"confirmNewPassword\":\"admin@122\"\n\n\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8000/api/application/filterApplications",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:8000/api/student/deleteAllUser",
+                    "path": [
+                        "api",
+                        "student",
+                        "deleteAllUser"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzhiMTZmZDBkOTJmNDQ3NDE0MGNiOWQiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE3MzcxNjkwNTIsImV4cCI6MTczNzI1NTQ1Mn0.oxfuoti-YMgpl__SlhQKFrS71Ju19a5llyjIo7j-YHg"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  // \"firstName\":\"abhi\",\n  // \"lastName\":\"rai\",\n  // \"email\":\"Abhijeet.rai@gmail.com\",\n  // \"oldPassword\":\"admin@112\",\n  // \"mobileNumber\":\"1029384756\"\n  // \"dateOfBirth\":\"28-06-2002\"\n// \"otp\":\"1903\"\n// \"newPassword\":\"admin@122\",\n// \"confirmNewPassword\":\"admin@122\"\n\n\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8000/api/application/filterApplications",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:8000/api/student/deleteById/678a7723605667cde0c233bc",
+                    "path": [
+                        "api",
+                        "student",
+                        "deleteById",
+                        "678a7723605667cde0c233bc"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzhiMTZmZDBkOTJmNDQ3NDE0MGNiOWQiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE3MzcxNjkwNTIsImV4cCI6MTczNzI1NTQ1Mn0.oxfuoti-YMgpl__SlhQKFrS71Ju19a5llyjIo7j-YHg"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  // \"firstName\":\"abhi\",\n  // \"lastName\":\"rai\",\n  // \"email\":\"Abhijeet.rai@gmail.com\",\n  // \"oldPassword\":\"admin@112\",\n  // \"mobileNumber\":\"1029384756\"\n  // \"dateOfBirth\":\"28-06-2002\"\n// \"otp\":\"1903\"\n// \"newPassword\":\"admin@122\",\n// \"confirmNewPassword\":\"admin@122\"\n\n\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8000/api/application/filterApplications",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:8000/api/student/updateUserStatus",
+                    "path": [
+                        "api",
+                        "student",
+                        "updateUserStatus"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzhiMTZmZDBkOTJmNDQ3NDE0MGNiOWQiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE3MzcxNjkwNTIsImV4cCI6MTczNzI1NTQ1Mn0.oxfuoti-YMgpl__SlhQKFrS71Ju19a5llyjIo7j-YHg"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  // \"firstName\":\"abhi\",\n  // \"lastName\":\"rai\",\n  // \"email\":\"Abhijeet.rai@gmail.com\",\n  // \"oldPassword\":\"admin@112\",\n  // \"mobileNumber\":\"1029384756\"\n  // \"dateOfBirth\":\"28-06-2002\"\n// \"otp\":\"1903\"\n// \"newPassword\":\"admin@122\",\n// \"confirmNewPassword\":\"admin@122\"\n\"status\":\"active\",\n\"id\":\"678b16fd0d92f4474140cb9d\"\n\n\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8000/api/application/filterApplications",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8000/api/application/submitApplication",
+                    "path": [
+                        "api",
+                        "application",
+                        "submitApplication"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzhiMTZmZDBkOTJmNDQ3NDE0MGNiOWQiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE3MzcxNjkwNTIsImV4cCI6MTczNzI1NTQ1Mn0.oxfuoti-YMgpl__SlhQKFrS71Ju19a5llyjIo7j-YHg"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  // \"firstName\":\"abhi\",\n  // \"lastName\":\"rai\",\n  // \"email\":\"Abhijeet.rai@gmail.com\",\n  // \"oldPassword\":\"admin@112\",\n  // \"mobileNumber\":\"1029384756\"\n  // \"dateOfBirth\":\"28-06-2002\"\n// \"otp\":\"1903\"\n// \"newPassword\":\"admin@122\",\n// \"confirmNewPassword\":\"admin@122\"\n// \"status\":\"active\",\n// \"id\":\"678b16fd0d92f4474140cb9d\"\n\"applicationName\":\"data\",\n\"description\":\"satyam\"\n\n\n\n}"
+                }
+            }
+        },
+        {
+            "name": "http://localhost:8000/api/application/filterApplications",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8000/api/application/getMyApplications",
+                    "path": [
+                        "api",
+                        "application",
+                        "getMyApplications"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8000"
+                },
+                "header": [
+                    {
+                        "key": "authorization",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzhiMTZmZDBkOTJmNDQ3NDE0MGNiOWQiLCJ1c2VyVHlwZSI6InN0dWRlbnQiLCJpYXQiOjE3MzcxNjkwNTIsImV4cCI6MTczNzI1NTQ1Mn0.oxfuoti-YMgpl__SlhQKFrS71Ju19a5llyjIo7j-YHg"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  // \"firstName\":\"abhi\",\n  // \"lastName\":\"rai\",\n  // \"email\":\"Abhijeet.rai@gmail.com\",\n  // \"oldPassword\":\"admin@112\",\n  // \"mobileNumber\":\"1029384756\"\n  // \"dateOfBirth\":\"28-06-2002\"\n// \"otp\":\"1903\"\n// \"newPassword\":\"admin@122\",\n// \"confirmNewPassword\":\"admin@122\"\n// \"status\":\"active\",\n// \"id\":\"678b16fd0d92f4474140cb9d\"\n// \"applicationName\":\"data\",\n// \"description\":\"satyam\"\n\n\n\n}"
+                }
+            }
+        }
+    ]
+}
